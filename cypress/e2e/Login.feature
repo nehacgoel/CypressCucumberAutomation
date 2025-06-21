@@ -1,6 +1,10 @@
 @login @regression
 
 Feature: webdriveruniversity - Login Page
+
+Background: Pre-condition
+    When I wait for 5 seconds
+
     Scenario Outline: Validate valid & invalid login credentials
         Given I navigate to the webdriveruniversity homepage
         When I click on the login portal button
